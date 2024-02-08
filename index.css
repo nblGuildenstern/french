@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFBBD;
+    text-align: center;
+}
+
+header {
+    font-size: x-large;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #E6AA68;
+    width: 100%;
+}
+.grid-item {
+    padding: 0%;
+    margin: 0 20%;
+    text-align: center;
+    border: 15px ridge #CA3C25;
+}
