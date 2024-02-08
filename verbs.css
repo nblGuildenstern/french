@@ -9,6 +9,7 @@ header {
     height: 100px;
     background-color: #E4E094;
     position: relative;
+    font-size: x-large;
 }
 
 header h1 {
