@@ -21,15 +21,22 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
-.grid-container {
+.verb-chart {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: #E6AA68;
     width: 100%;
+    margin: 0 auto;
+    width: 30%;
 }
-.grid-item {
+
+.verb-ending {
     padding: 0%;
     margin: 0 20%;
     text-align: center;
-    border: 15px ridge #CA3C25;
+}
+
+#top-left {
+    border: #E4E094;
+    border-radius: 2px;
 }
