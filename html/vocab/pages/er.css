@@ -28,15 +28,15 @@ header h1 {
     font-size: 18px;
     padding: 11px;
     border: 1px solid #ddd;
+}
 
-  }
-  
-  /* Style the navigation menu inside the left column */
-  #words {
+/* Style the navigation menu inside the left column */
+#words {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-transform: capitalize;
+    font-size: large;
   }
   
   #words li  p{
@@ -48,5 +48,5 @@ header h1 {
   
   #words li p:hover {
     background-color: #eee;
-    margin: 16px 30%;
+    margin: 18px 40%;
   }
