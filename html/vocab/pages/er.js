@@ -14,3 +14,32 @@ function myFunction() {
     }
   }
 }
+
+function togglePopup(element) {
+  var test = document.getElementById("frenchVerb");
+  //element.innerHTML = test.innerHTML;
+  //console.log(popupElement);
+}
+
+document.addEventListener("click", function (eventArgs) {
+  const popupElement = document.getElementById("frenchVerb");
+  var popupActive = false;
+  var popup = document.getElementById("myPopup");
+  var target = eventArgs.target;
+  var elementToLookFor = "p";
+    if(popupActive) {
+      popup.classList.toggle("show");
+      popupActive = false;
+    } else {
+      console.log(target.tagName.toLowerCase())
+      if (target.tagName.toLowerCase() === elementToLookFor) {
+        popup.classList.toggle("show");
+        popupElement.innerHTML = target.innerHTML;
+        //console.log(target);
+        popupActive = true;
+      } else {
+        // console.log(target.tagName.toLowerCase())
+      }
+    }
+  console.log(popupActive)
+});

@@ -1,0 +1,27 @@
+.verb-chart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #E6AA68;
+    color: black;
+    margin: auto auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#chart-box {
+    width: 35%;
+    height: auto;
+    min-width: 300px;
+    background-color: #555;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px 0;
+    margin-top: 20px;
+}
+
+.verb-ending {
+    padding: 0%;
+    font-size: xx-large;
+    margin: 0 20%;
+    text-align: center;
+}
