@@ -45,3 +45,8 @@ document.addEventListener("touchend", function (eventArgs) {
   eventArgs.targetTouches.item.innerHTML = "hello"
   togglePopup(eventArgs.touches[0]);
 });
+
+function testClick() {
+  document.getElementById("test").innerHTML = "hlkeh";
+  console.log("sjlkdfjsld")
+}
