@@ -27,7 +27,7 @@ function togglePopup(target) {
       console.log(target.tagName.toLowerCase())
       if (target.tagName.toLowerCase() === elementToLookFor) {
         popup.classList.toggle("show");
-        popupElement.innerHTML = target.innerHTML;
+        popupElement.innerHTML = target.innerHTML + " - " + target.getAttribute("title");
         //console.log(target);
         popupActive = true;
       } else {
