@@ -59,11 +59,11 @@ header h1 {
   cursor: pointer;
 }
 
-#popup-transparency {
+/* #popup-transparency {
   background-color: black;
   width: 3000px;
   height: 3000px;
-}
+} */
 
 /* The actual popup (appears on top) */
 .popup .popuptext {

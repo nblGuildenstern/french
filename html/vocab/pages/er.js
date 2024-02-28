@@ -37,9 +37,9 @@ function togglePopup(target) {
   console.log(popupActive)
 }
 
-document.addEventListener("click", function (eventArgs) {
-  togglePopup(eventArgs.target);
-});
+// document.addEventListener("click", function (eventArgs) {
+//   togglePopup(eventArgs.target);
+// });
 
 document.addEventListener("touchend", function (eventArgs) {
   eventArgs.targetTouches.item.innerHTML = "hello"
