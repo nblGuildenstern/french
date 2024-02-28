@@ -15,11 +15,10 @@ function myFunction() {
   }
 }
 
-function togglePopup(eventArgs) {
+function togglePopup(target) {
   const popupElement = document.getElementById("frenchVerb");
   var popupActive = false;
   var popup = document.getElementById("myPopup");
-  var target = eventArgs.target;
   var elementToLookFor = "p";
     if(popupActive) {
       popup.classList.toggle("show");
@@ -39,10 +38,10 @@ function togglePopup(eventArgs) {
 }
 
 document.addEventListener("click", function (eventArgs) {
-  togglePopup(eventArgs);
+  togglePopup(eventArgs.target);
 });
 
-document.addEventListener("touchstart", function (eventArgs) {
+document.addEventListener("touchend", function (eventArgs) {
   eventArgs.targetTouches.item.innerHTML = "hello"
-  togglePopup(eventArgs);
+  togglePopup(eventArgs.touches[0]);
 });
