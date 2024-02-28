@@ -42,10 +42,10 @@ document.addEventListener("click", function (eventArgs) {
   togglePopup(eventArgs.target);
 });
 
-document.getElementById("words").addEventListener("touchend", function (eventArgs) {
-  eventArgs.targetTouches.item.innerHTML = "hello"
-  togglePopup(eventArgs.touches[0]);
-});
+// document.getElementById("words").addEventListener("touchend", function (eventArgs) {
+//   eventArgs.targetTouches.item.innerHTML = "hello"
+//   togglePopup(eventArgs.touches[0]);
+// });
 
 function testClick() {
   document.getElementById("test").innerHTML = "hlkeh";
