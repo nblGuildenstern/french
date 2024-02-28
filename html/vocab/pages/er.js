@@ -43,5 +43,6 @@ document.addEventListener("click", function (eventArgs) {
 });
 
 document.addEventListener("touchstart", function (eventArgs) {
+  eventArgs.targetTouches.item.innerHTML = "hello"
   togglePopup(eventArgs);
 });
