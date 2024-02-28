@@ -38,7 +38,6 @@ function togglePopup(target) {
 }
 
 document.addEventListener("click", function (eventArgs) {
-  document.getElementById("test").innerHTML = "hlkeh";
   togglePopup(eventArgs.target);
 });
 
