@@ -15,6 +15,7 @@ function myFunction() {
   }
 }
 
+
 function togglePopup(target) {
   const popupElement = document.getElementById("frenchVerb");
   var popupActive = false;
@@ -47,6 +48,7 @@ document.addEventListener("click", function (eventArgs) {
 // });
 
 function testClick() {
-  document.getElementById("test").innerHTML = "hlkeh";
-  console.log("sjlkdfjsld")
+  fetch('./verbs.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json))
 }

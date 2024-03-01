@@ -1,0 +1,7 @@
+{
+  "verbs":[
+    { "french":"habiter", "english":"to live(residence)" },
+    { "french":"nager", "english":"to swim" },
+    { "french":"manger", "english":"to eat", "conjugations": ["mange", "manges", "mange", "mangeons", "mangez", "mangent"] }
+  ]
+}
