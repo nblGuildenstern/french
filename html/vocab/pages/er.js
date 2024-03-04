@@ -15,27 +15,50 @@ function myFunction() {
   }
 }
 
+var popupIDs = ["top-left", "mid-left", "bot-left", "top-right", "mid-right", "bot-right"];
+var subjects = ["je", "tu", "il", "nous", "vous", "ils"];
+var popupActive = false;
 
 function togglePopup(target) {
   const popupElement = document.getElementById("frenchVerb");
-  var popupActive = false;
   var popup = document.getElementById("myPopup");
   var elementToLookFor = "p";
     if(popupActive) {
       popup.classList.toggle("show");
       popupActive = false;
     } else {
-      console.log(target.tagName.toLowerCase())
       if (target.tagName.toLowerCase() === elementToLookFor) {
         popup.classList.toggle("show");
         popupElement.innerHTML = target.innerHTML + " - " + target.getAttribute("title");
-        //console.log(target);
+        // showPopup();
         popupActive = true;
+        
       } else {
-        // console.log(target.tagName.toLowerCase())
+        console.log(target.tagName.toLowerCase())
       }
     }
-  console.log(popupActive)
+    showPopup(target);
+}
+
+function showPopup(target) {
+  fetch('./verbs.json')
+    .then(response => response.json())
+    .then(data => {
+      
+      data.forEach(item => {
+        console.log(item.conjugations.je);
+        
+        if(target.innerHTML == item.french) {
+          var i = 0;
+          popupIDs.forEach(id => {
+            document.getElementById(id).innerHTML = item.conjugations[subjects[i]]
+            i++;
+          });
+        }
+      })
+    })
+    .catch(error => console.error('Error fetching data:', error));
+  
 }
 
 document.addEventListener("click", function (eventArgs) {
@@ -46,6 +69,22 @@ document.addEventListener("click", function (eventArgs) {
 //   eventArgs.targetTouches.item.innerHTML = "hello"
 //   togglePopup(eventArgs.touches[0]);
 // });
+
+fetch('./verbs.json')
+    .then(response => response.json())
+    .then(data => {
+      const list = document.getElementById('words');
+
+      data.forEach(item => {
+        const listItem = document.createElement("li");
+        const pItem = document.createElement("p");
+        pItem.textContent = item.french;
+        pItem.title = item.english;
+        listItem.appendChild(pItem);
+        list.appendChild(listItem);
+      })
+    })
+    .catch(error => console.error('Error fetching data:', error));
 
 function testClick() {
   fetch('./verbs.json')

@@ -1,7 +1,5 @@
-{
-  "verbs":[
-    { "french":"habiter", "english":"to live(residence)" },
-    { "french":"nager", "english":"to swim" },
-    { "french":"manger", "english":"to eat", "conjugations": ["mange", "manges", "mange", "mangeons", "mangez", "mangent"] }
-  ]
-}
+[
+  { "french":"habiter", "english":"to live (residence)", "conjugations": {"je": "habite", "tu": "habites", "il": "habite", "nous": "habitons", "vous": "habitez", "ils": "habitent"}},	
+  { "french":"nager", "english":"to swim", "conjugations": {"je": "nage", "tu": "nages", "il": "nage", "nous": "nageons", "vous": "nagez", "ils": "nagent"}},
+  { "french":"manger", "english":"to eat", "conjugations": {"je": "mange", "tu": "manges", "il": "mange", "nous": "mangeons", "vous": "mangez", "ils": "mangent"}}
+] 
