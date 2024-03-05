@@ -2,4 +2,5 @@
   { "french":"habiter", "english":"to live (residence)", "conjugations": {"je": "habite", "tu": "habites", "il": "habite", "nous": "habitons", "vous": "habitez", "ils": "habitent"}},	
   { "french":"nager", "english":"to swim", "conjugations": {"je": "nage", "tu": "nages", "il": "nage", "nous": "nageons", "vous": "nagez", "ils": "nagent"}},
   { "french":"manger", "english":"to eat", "conjugations": {"je": "mange", "tu": "manges", "il": "mange", "nous": "mangeons", "vous": "mangez", "ils": "mangent"}}
+  
 ] 
