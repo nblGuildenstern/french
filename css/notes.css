@@ -36,3 +36,8 @@ header h1 {
     width: 50%;
 }
 
+#progression {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    
+}
