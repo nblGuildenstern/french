@@ -4,28 +4,36 @@
     color: black;
     margin: auto auto;
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
     gap: 20px;
 }
 
 #chart-box {
-    width: 35%;
+    width: 40%;
     height: auto;
     min-width: 400px;
     background-color: #555;
     text-align: center;
     border-radius: 10px;
-    padding: 12px 0;
+    padding: 15px 0;
     margin-top: 20px;
 }
 
 .verb-ending, .pronoun {
     padding: 5% 0%;
-    margin: 0 20%;
+    margin: 0 10%;
     text-align: center;
     border-radius: 10px;
     background-color: #E6AA68;
 
+}
+
+#top-left, #mid-left, #bot-left {
+    margin-right: 0%;
+}
+
+#top-right, #mid-right, #bot-right {
+    margin-left: 0%;
 }
 
 .verb-ending {
