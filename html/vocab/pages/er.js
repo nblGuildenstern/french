@@ -24,8 +24,22 @@ function togglePopup(target) {
   var popup = document.getElementById("myPopup");
   var elementToLookFor = "p";
     if(popupActive) {
-      popup.classList.toggle("show");
-      popupActive = false;
+      var curElem = document.getElementById(target.id);
+      while(true) {
+        if(curElem == null || curElem.nodeName == "html") {
+          console.log(target.id);
+          popup.classList.toggle("show");
+          popupActive = false;
+          document.getElementById("present").getAttribute("checked") = true;
+          break;
+        } else if(curElem.className == "popup") {
+          break;
+        } else {
+          console.log(document.getElementById(target.id).parentElement);
+          curElem = curElem.parentElement;
+        }
+
+      }
     } else {
       if (target.tagName.toLowerCase() === elementToLookFor) {
         popup.classList.toggle("show");
@@ -37,10 +51,10 @@ function togglePopup(target) {
         console.log(target.tagName.toLowerCase())
       }
     }
-    showPopup(target);
+    editPopup(target);
 }
 
-function showPopup(target) {
+function editPopup(target) {
   fetch('./verbs.json')
     .then(response => response.json())
     .then(data => {
@@ -51,7 +65,7 @@ function showPopup(target) {
         if(target.innerHTML == item.french) {
           var i = 0;
           popupIDs.forEach(id => {
-            document.getElementById(id).innerHTML = item.conjugations[subjects[i]]
+            document.getElementById(id).innerHTML = item.conjugations.present[subjects[i]]
             i++;
           });
         }

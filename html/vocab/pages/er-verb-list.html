@@ -12,7 +12,7 @@
         <header>
             <h1>ER Verbs</h1>
         </header>
-        <div class="popup" onclick="popupFunction()">
+        <div class="popup">
             <span class="popuptext" id="myPopup">
                 <h1 id="frenchVerb">French Verb</h1>
                 <section class="verb-chart">
@@ -23,55 +23,18 @@
                     <h2 class="verb-ending" id="bot-left">il</h2>
                     <h2 class="verb-ending" id="bot-right">ils</h2>
                 </section>
+                <section id="tenseSelect">
+                    <input type="radio" id="present" name="tense" value="Present" checked>
+                    <label for="present">Present</label><br>
+                    <input type="radio" id="past" name="tense" value="Past">
+                    <label for="past">Past</label><br>
+                    <input type="radio" id="imparfait" name="tense" value="Imparfait">
+                    <label for="imparfait">Imparfait</label>
+                </section>
             </span>
         </div>
         <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-        <ul id="words">
-            <!-- <li><p id="test" title="to lower, to push/pull down">abaisser</p></li>
-            <li><p title="to ruin">abîmer</p></li>
-            <li><p onclick="testClick()" title="to adore">adorer</p></li>
-            <li><p title="to like, to love">aimer</p></li>
-            <li><p title="to arrive, to happen">arriver</p></li>
-            <li><p title="to move">bouger</p></li>
-            <li><p title="to brush">brosser</p></li>
-            <li><p title="to break">casser</p></li>
-            <li><p title="to change">changer</p></li>
-            <li><p title="to sing">chanter</p></li>
-            <li><p title="to look for">chercher</p></li>
-            <li><p title="to begin, to start">commencer</p></li>
-            <li><p title="to correct">corriger</p></li>
-            <li><p title="to dance">danser</p></li>
-            <li><p title="to ask for">demander</p></li>
-            <li><p title="to hate">détester</p></li>
-            <li><p title="to give">donner</p></li>
-            <li><p title="to listen to">écouter</p></li>
-            <li><p title="to erase">effacer</p></li>
-            <li><p title="to study">étudier</p></li>
-            <li><p title="to congratulate">féliciter</p></li>
-            <li><p title="to close">fermer</p></li>
-            <li><p title="to celebrate">fêter</p></li>
-            <li><p title="to win, to earn">gagner</p></li>
-            <li><p title="to freeze">geler</p></li>
-            <li><p title="to slide">glisser</p></li>
-            <li><p title="to live">habiter</p></li>
-            <li><p title="to invite">inviter</p></li>
-            <li><p title="to play">jouer</p></li>
-            <li><p title="to eat">manger</p></li>
-            <li><p title="to miss">manquer</p></li>
-            <li><p title="to walk, to function">marcher</p></li>
-            <li><p title="to climb">monter</p></li>
-            <li><p title="to swim">nager</p></li>
-            <li><p title="to talk, to speak">parler</p></li>
-            <li><p title="to share">partager</p></li>
-            <li><p title="to think">penser</p></li> 
-            <li><p title="to watch, to look at">regarder</p></li>
-            <li><p title="to ski">skier</p></li>
-            <li><p title="to work">travailler</p></li>
-            <li><p title="to find">trouver</p></li>
-            <li><p title="to visit (a place)">visiter</p></li>
-            <li><p title="to travel -">voyager</p></li> -->
-            <!-- <li><p title="English">French</p></li> -->
-        </ul>
+        <ul id="words"></ul>
         <div id="popup-transparency">
     </body>
     </html>
